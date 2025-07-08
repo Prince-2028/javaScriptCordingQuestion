@@ -1,0 +1,20 @@
+{
+  "name": "java-script-coding-question",
+  "version": "1.0.0",
+  "description": "This is java script question practies ",
+  "main": "index.js ",
+  "type": "module",
+  "scripts": {
+    "test": "yes",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "yes"
+  },
+  "keywords": [
+    "Prince"
+  ],
+  "author": "Prince Kuamr",
+  "license": "ISC"
+}
