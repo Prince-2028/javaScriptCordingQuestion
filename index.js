@@ -151,13 +151,84 @@
 // console.log(person.fullName()); 
 
 
-function outer() {
-  let name = "Prince";
+// function outer() {
+//   let name = "Prince";
 
-  function inner() {
-    console.log("Hello " + name);
-  }
+//   function inner() {
+//     console.log("Hello " + name);
+//   }
+// }
+
+// const greet = outer(); // outer() call hoke finish ho gaya
+// greet(); // 🔥 Still prints: Hello Prince
+
+
+
+// new Promise(function(resolve, reject) {
+//   resolve("Success!");
+// }).then(function(value) {
+//   console.log(value); // "Success!"
+// }).catch(function(error) {
+//   console.log(error);
+// }).finally(function() {
+//   console.log("Promise completed");
+// })
+
+
+// const promise1 = new Promise((resolve, reject) => {
+// setTimeout((function(){
+//   console.log("Promise is resolved");
+  
+// }),2000)
+// });
+
+// promise1.then((resolve) => console.log(res)).catch((err) => console.log(err));
+
+
+
+
+
+
+// let a =10 
+// let b =a
+// b =7
+// console.log(a); 
+// console.log(b);
+
+
+
+
+// const obj ={
+//     name: "Prince",
+//     age: 25
+// }
+// const obj2 = obj; 
+// obj.age =30
+// console.log(obj.age);
+// console.log(obj2.age );
+
+
+
+// function outer (){
+//   let name="Prince";
+//   function inner(){
+//     console.log("Hello " + name);
+//   }
+//   return inner;
+// }
+
+// let greet = outer(); // outer() call hoke finish ho gaya
+// greet(); // 🔥 Still prints: Hello Prince
+
+
+
+
+
+function abc(){
+   console.log("Hello from abc");
+ 
 }
+let xyz=abc()
+console.log(xyz); // undefined, because abc does not return anything
 
-const greet = outer(); // outer() call hoke finish ho gaya
-greet(); // 🔥 Still prints: Hello Prince
+
