@@ -292,13 +292,42 @@ Uncomment any block to run and observe the output/behavior.
 
 
 
-function x(){
-   let a = 20;
-   function y(){
-      console.log(a);
-   }
- return y 
-}
-let closure = x(); 
-console.log(closure); // undefined, because x does not return anything
-closure(); // 20, because y has access to a in x's scope
+// function x(){
+//    let a = 20;
+//    function y(){
+//       console.log(a);
+//    }
+//  return y 
+// }
+// let closure = x(); 
+// console.log(closure); 
+// closure(); 
+
+// const obj = {
+//     text: 'LOGGING',
+//     list: ['1', '2', '3'],
+//     log() {
+//         this.list.forEach(function (item) {
+//             console.log(this.text + item); // OUTPUT ????
+//         });
+//     },
+// };
+// obj.log()
+
+
+// const data = [1, [2, [3, [4, [5]]]]]
+// console.log(data.flat(Infinity))
+
+// if (true) {
+//   var foo = 1;
+//   let bar = 2;
+//   const baz = 3;
+// }
+
+// console.log(foo); // 1
+// console.log(bar); // ReferenceError
+// console.log(baz); // ReferenceError
+
+
+
+
