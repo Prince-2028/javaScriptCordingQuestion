@@ -329,5 +329,11 @@ Uncomment any block to run and observe the output/behavior.
 // console.log(baz); // ReferenceError
 
 
+let x = 0.1 + 0.2;
+let y = 0.3;
+console.log(x);
+console.log(y);
+console.log(x===y);  // false, due to floating point precision issues in JavaScript
+
 
 
