@@ -209,7 +209,7 @@ Uncomment any block to run and observe the output/behavior.
 //     name: "Prince",
 //     age: 25
 // }
-// const obj2 = obj; 
+// const obj2 = obj;
 // obj.age =30;
 // console.log(obj.age);  // 30
 // console.log(obj2.age); // 30
@@ -264,9 +264,6 @@ Uncomment any block to run and observe the output/behavior.
 // let xyz=abc();
 // console.log(xyz); // undefined, because abc does not return anything
 
-
-
-
 // function outer(){
 //   var a =10;
 //   function inner(){
@@ -277,7 +274,7 @@ Uncomment any block to run and observe the output/behavior.
 
 // outer()();
 
-// function outer(){ 
+// function outer(){
 //   function inner(){
 //     console.log(a);
 //   }
@@ -288,20 +285,16 @@ Uncomment any block to run and observe the output/behavior.
 // var close = outer(); // this will give you outer function
 // close(); // this will give you inner function and equivalent
 
-
-
-
-
 // function x(){
 //    let a = 20;
 //    function y(){
 //       console.log(a);
 //    }
-//  return y 
+//  return y
 // }
-// let closure = x(); 
-// console.log(closure); 
-// closure(); 
+// let closure = x();
+// console.log(closure);
+// closure();
 
 // const obj = {
 //     text: 'LOGGING',
@@ -313,7 +306,6 @@ Uncomment any block to run and observe the output/behavior.
 //     },
 // };
 // obj.log()
-
 
 // const data = [1, [2, [3, [4, [5]]]]]
 // console.log(data.flat(Infinity))
@@ -328,12 +320,112 @@ Uncomment any block to run and observe the output/behavior.
 // console.log(bar); // ReferenceError
 // console.log(baz); // ReferenceError
 
+// let x = 0.1 + 0.2;
+// let y = 0.3;
+// console.log(x);
+// console.log(y);
+// console.log(x===y);  // false, due to floating point precision issues in JavaScript
 
-let x = 0.1 + 0.2;
-let y = 0.3;
-console.log(x);
-console.log(y);
-console.log(x===y);  // false, due to floating point precision issues in JavaScript
+// let a =()=>{
+//     console.log(this);
+
+// }
+// a()
+// function a (){
+//     console.log(this);
+// }
+// a()
+
+// let x = [];
+// let y = [];
+// let z = x + y;
+// console.log(x);
+// console.log(y);
+
+// console.log(typeof z);
+
+// let fruits = ["apple", "banana", "mango", "orange"];
+
+//  const abc=fruits.map((fruit, index) => {
+//   return fruit.toUpperCase();
+// });
+// console.log(abc);
+
+// const numbers = [1, 2, 3, 4, 5];
+// const tripple = numbers.map((num) => {
+//   return num < 4;
+// });
+// console.log(tripple);
+
+// const fruits = ["apple", "banana", "mango"];
+
+// fruits.forEach((fruit, index) => {
+//   console.log(index, fruit.toUpperCase());
+// });
+
+// console.log(fruits);
+// // Original array change nahi hota
+
+// chaniing function
+
+// const number =[1,2,3,4,5,6,7,8,9,10]
+// const newNum= number.map((num)=>{
+//     return num*10
+// })
+// .filter((num)=>{
+//     return num ===21
+// })
+//  console.log(newNum);
+
+// let x =7
+// let y =x+2
+// console.log(x);
+// console.log(y);
+
+// const abd="Prince"
+// function abc(str){
+//     let a= str.split("").reverse().join("")
+//     return a===str
+// }
+// console.log(abc("hello"));
+
+// function abc(r) {
+//   return Math.max(...r);
+// }
+// let dc = abc([100, 2, 3, 4]);
+// console.log(dc);
+
+// let abc=[1,3,4,5]
+// for(abc=0;abc<abc.length;abc++){
+//     console.log(abc);
+
+// }
+
+// const abc=[1,2,3,4,4,5]
+// const adc=abc.slice(1)
+// console.log(adc);
+// console.log('gfg'.repeat(3));
+
+// function abd(str){
+//     let x=str.split("").reverse("").join("")
+//     return x==str
+
+// }
+// console.log(abd("madam"));
+
+// const abc="Prince"
+// const reverseString=abc.split("").reverse("").join("")
+// console.log(reverseString);
 
 
 
+// const abc= new Promise((res,rej)=>{
+//     let Success =true
+//     if(Success){
+//         res("hello wolrd")
+//     }
+// })
+// abc.then((result)=>{
+// console.log(result);
+
+// })
